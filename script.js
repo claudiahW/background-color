@@ -1,6 +1,11 @@
 let index = 0;
 
-function changeColors();
+function changeColors()
 {
-    let color= ['red','orange','yellow','green','blue']
+    let colors= ['red','orange','yellow','green','blue'];
+
+    document.getElementsByTagName('body')[0].
+    style.background = colors[index++];
+    if(index > colors.length -1 )
+    index =0 ;
 }
